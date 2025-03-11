@@ -1,16 +1,7 @@
-"use client";
-
-import { useEffect } from "react";
 import Image from "next/image";
 import logo from "@/assets/img/Group 9036.svg";
 
 export default function NavBar() {
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      import("bootstrap/dist/js/bootstrap.bundle.min.js");
-    }
-  }, []);
-
   return (
     <div>
       <nav className="navbar navbar-expand-lg position-absolute top-2 z-index-3 w-100 shadow-none my-3 navbar-transparent">
@@ -30,11 +21,15 @@ export default function NavBar() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon mt-2"></span>
+            <span className="navbar-toggler-icon mt-2">
+              <span className="navbar-toggler-bar bar1"></span>
+              <span className="navbar-toggler-bar bar2"></span>
+              <span class="navbar-toggler-bar bar3"></span>
+            </span>
           </button>
 
           {/* Menú */}
-          <div className="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
+          <div className="navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
             <ul className="navbar-nav navbar-nav-hover ms-auto">
               <li className="nav-item mx-2">
                 <a className="nav-link text-white fw-bold" href="#">Estudios</a>
