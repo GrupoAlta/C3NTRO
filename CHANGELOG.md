@@ -1,180 +1,123 @@
 # Change Log
 
-## [3.1.0] 2024-10-23
+## [1.5.2] 2023-05-25
 
-### Updates & Improvements
+- Update dependencies
+- Fix installation issue
 
-- update Bootstrap to v5.3.3
-- all plugins updated to the latest version
+## [1.5.1] 2021-07-26
 
-## [3.0.4] 2023-05-07
+- Update the dependencies
+- Migration to React 18
+- Migration to sass from node-sass
 
-### Updates
+## [1.5.0] 2021-05-19
 
-- update Bootstrap to v5.2.3
-- update Popper.js to v2.11.7
-- update navbar link
-- add Nepcha scripts
+### Bug fixing
 
-## [3.0.3] 2022-06-23
+### Major style changes
 
-### BugFixing
+### Deleted components
 
-- fix inputs on RTL
-- update <html> tag border
+### Added components
 
-## [3.0.2] 2022-06-09
+### Deleted dependencies
 
-### Update and Improvements
+- `react-google-maps` (no longer maintained, so we'll use simple Google Maps API)
+- `@types/googlemaps`
+- `@types/markerclustererplus`
+- `@types/react`
 
-- update Bootstrap to v5.2.0-beta1
-- fix code preview for input-outine
+### Added dependencies
 
-## [3.0.1] 2022-03-07
+- `@babel/core@7.14.3` (to stop warnings on install)
 
-### Update and Improvements
+### Updated dependencies
 
-- fix running 'npm install' issue
-- fix SCSS compiling issues
+```
+moment                 2.26.0   →   2.29.1
+node-sass              4.14.1   →    6.0.0
+nouislider             14.5.0   →   15.1.0
+react                 16.13.1   →   17.0.2
+react-datetime         2.16.3   →    3.0.4
+react-dom             16.13.1   →   17.0.2
+react-scripts           3.4.1   →    4.0.3
+react-select            3.1.0   →    4.3.1
+reactstrap              8.4.1   →    8.9.0
+gulp-append-prepend     1.0.8   →    1.0.9
+typescript              3.9.5   →    4.2.4
+```
 
-## [3.0.0] 2021-10-01
+### Warning
 
-### Update and Improvements
+_While in development some of the plugins that were used for this product will throw some warnings - note, this only happens in development, the UI or the functionality of the product is not affected, also, if the issues will persist in React 17, we'll drop usage of those plugins, and replace them with other ones._
+_Warnings might appear while doing an npm install - they do not affect the UI or the functionality of the product, and they appear because of NodeJS and not from the product itself._
 
-- Update Bootstrap to v5.1.1
-- Update to Material Design 2
-- Add more example pages
-- New Documentation version
+```
+npm WARN react-datetime@3.0.4 requires a peer of react@^16.5.0 but none is installed. You must install peer dependencies yourself.
+npm WARN react-tagsinput@3.19.0 requires a peer of react@^16.0.0 || ^15.0.0 || ^0.14.0 but none is installed. You must install peer dependencies yourself.
+```
 
-## [2.2.0] 2019-10-31
+_In our next update we'll replace this plugin with something else to stop these._
+_You will also have the following message: found 80 vulnerabilities (1 low, 79 moderate). This comes from react-scripts, and will be fixed in the next version. NOTE: the product works as expected with these vulnerabilities._
 
-### Bug fixing, Improvements
+## [1.4.0] 2020-06-15
 
-- Update Bootstrap to v4.3.1
-- Updated plugins
-- Small changes for the documentation
-- Dependencies update
-- Misspelling fixed
-- Fixed HTML code in documentation tab title
-- Multilevel dropdown caret rotate fix
-- Change versions on CSS and JS files
+### Bug fixing
 
-## [2.1.1] 2018-11-22
+- Run prettier on all files, so there might be changes due to this
+- https://github.com/creativetimofficial/ct-now-ui-kit-pro-react/issues/2 (added warnings on the documentation about this issue - unfortunately, we need to keep our own homepage prop inside the package.json for copyright issues)
+- Other Now UI React products
+  - https://github.com/creativetimofficial/ct-now-ui-dashboard-pro-react/issues/31 (changed the fonts import to `~assets/fonts` and also added assets path inside `jsconfig.json` file)
+  - https://github.com/creativetimofficial/ct-now-ui-dashboard-pro-react/issues/10 (added `window.scrollTo(0, 0)` and `document.body.scrollTop = 0` to all pages so when you navigate to new page you are sent to the first line of the page)
+  - https://github.com/creativetimofficial/now-ui-dashboard-react/issues/10
 
-### Improvements, BugFixing
+### Major style changes
 
-- Changes for responsive devices
-- Improvements and BugFixing for documentation
-- Change versions on CSS and JS files
-- Pro Documentation integrated in Free Version
-- New page - Error Page 404
-- Eliminated extra CSS and JS
+- `src/assets/scss/now-ui-kit/_nucleo-outline.scss` (changed the fonts import to `~assets/fonts` and also added assets path inside `jsconfig.json` file)
+- `src/assets/scss/now-ui-kit/_variables.scss` (changed the fonts import to `~assets/fonts` and also added assets path inside `jsconfig.json` file)
+- `src/assets/scss/react/now-ui-kit/_popovers.scss` (because of new bootstrap and reactstrap versions)
+- `src/assets/scss/react/now-ui-kit/_tooltips.scss` (because of new bootstrap and reactstrap versions)
+- `src/assets/scss/react/react-differences.scss` (to add the new tootlips styles)
 
-## [2.1.0] 2018-06-29
+### Deleted components
 
-### Bug fixing, Improvements
+### Added components
 
-- Solved responsive issues
-- Updated plugins
-- Multilevel dropdown integration
-- Small changes for responsive devices
-- Fixed-plugin in user archive integration
-- Shopping Cart page
-- Speed optimizations
-- Documentation errors fixed
-- Gulp compiling of the SASS files
-- Change versions on CSS and JS files
-- Small changes for components
+### Deleted dependencies
 
-## [2.0.3] 2018-02-20
+### Added dependencies
 
-### Bug fixing, Improvements
+### Updated dependencies
 
-- added scroll to id in Section Page
-- change the demo.css/demo.js files to run the project without them
-- resize the modal on devices to fit the page
-- change the name and the route in the gulpfile.js file in the users archive
-- in the html pages the path from images was changed
-- we changed the path of images from `assets/img` folder
+```
+moment               2.24.0   →    2.26.0
+node-sass            4.12.0   →    4.14.1
+nouislider           14.0.2   →    14.5.0
+react                16.8.6   →   16.13.1
+@types/react        16.8.23   →   16.9.36
+react-dom            16.8.6   →   16.13.1
+react-router          5.0.1   →     5.2.0
+react-router-dom      5.0.1   →     5.2.0
+react-scripts         3.0.1   →     3.4.1
+react-select          3.0.4   →     3.1.0
+reactstrap            8.0.1   →     8.4.1
+rellax               1.10.0   →    1.12.1
+@types/googlemaps    3.37.0   →    3.39.6
+typescript            3.5.3   →     3.9.5
+```
 
-## [2.0.3] 2018-02-12
+### Warning
 
-### Improvements, Bootstrap 4.0.0 update
+_All the following products: Now UI Kit React, Now UI Dashboard React, Now UI Kit PRO React and Now UI Dashboard PRO React have been updated together, and thus, we've added to all of them the same version of 1.4.0 - we may have skipped some versions for some of the above products, we've done so, since we want all Now UI & React products to share the same versions._
+_While in development some of the plugins that were used for this product will throw some warnings - note, this only happens in development, the UI or the functionality of the product is not affected, also, if the issues will persist in React 17, we'll drop usage of those plugins, and replace them with other ones._
+_Warnings might appear while doing an npm install - they do not affect the UI or the functionality of the product, and they appear because of NodeJS and not from the product itself._
 
-- Reestablish the gulp compiling of the SASS files
+## [1.0.0] 2019-07-31
 
-## [2.0.1] 2018-01-31
+### Original Release
 
-### Bug fixing, Improvements
-
-- Added two plugins in Documentation
-- Included gulp task that opens the project in browser
-- Reestablish the routes for some Documentation Components
-- responsive issue fixed for carousel
-
-## [2.0.0] 2018-01-12
-
-### Bootstrap 4 update
-
-- Core base code on Bootstrap 4
-- Documentation code base written from scratch
-- Speed optimizations
-- Class changes : .card-block to .card-body
-- .navbar-toggleable-_ to .navbar-expand-_
-- .hidden-_-down to .d-none .d-_-block
-- .hidden-_-up to .d-_-none
-- .checkbox to .form-check
-- .radio to .form-check
-- more class changes here:https://medium.com/@lukaszholeczek/how-to-upgrade-bootstrap-4-alpha-6-to-bootstrap-4-beta-d43b4210f2a3
-- Bug fixes for responsive devices
-- Small changes for components
-
-## [1.2.1] 2017-11-09
-
-### BugFixing
-
-- fixed parallax page scroll
-- fixed cards from `ecommerce.html` page
-
-## [1.2.0] 2017-09-13
-
-### BugFixing
-
-- jQuery library update to the latest version
-- removed atv-img-animation.js library ( multiple problems with the browsers )
-- fixed rotating card system for IE, changed rotating cards with raised image with regular cards with background image or plain cards
-- bootstrap-selectpicker.js updated to the latest version
-
-## [1.1.1] 2017-05-22
-
-### BugFixing
-
-- fixed problem with Morphing Cards(rotating manual and auto) and Perspective Cards when images were loading later than the javascript
-
-## [1.1.0] 2017-04-14
-
-### BugFixing, Plugins Updates, New Cards (HTML Version)
-
-- v1.1.0 14 Apr, 2017 -
-- Bootstrap v3.3.7
-- Bootstrap DateTimePicker v4.17.45
-- Replace Bootstrap SelectPicker v1.11.2
-- Replace Tags with Bootstrap TagsInput v0.8.0
-- jQuery.Flexisel v2.1.0
-- NoUiSlider v9.0.0
-- jQuery v3.1.1
-- moment.js v2.14.1
-- Added new cards
-- Added 3D animation effect for images on cards(atvImg library)
-- Added DynamicShadows
-- Added New rotating cards
-- Added Ecommerce Page
-- Bug fixing
-- Documentation Updates
-- Added simple input example
-
-IMPORTANT! If you migrate from V1.0.0 to V1.1.0 please make sure your replace the '.content' class inside each card with '.card-content', we've made this adjustment for a better control of the content that is inside a card. Sorry for the inconvenience.
-
-## [1.0.0] 2016-06-15
-
-### Initial Release
+- Started project with create-react-app
+- Added Reactstrap as base framework
+- Added design from Now UI Kit by Creative Tim
+- Added React Hooks
