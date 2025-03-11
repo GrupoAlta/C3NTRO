@@ -32416,6 +32416,47 @@ Docs & License: https://fullcalendar.io/
   font-style: normal;
 }
 
+@font-face {
+  font-family: "ConneqtRegular";
+  src: url("../fonts/ConneqtRegular.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Belfast Grotesk Semi Bold";
+  src: url("../fonts/Belfast Grotesk Semi Bold.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+.nuestras-ubicaciones {
+  font-family: "ConneqtRegular", sans-serif;
+  color: #CCDEC0 !important;
+}
+
+.text-xl {
+  font-family: "ConneqtRegular", sans-serif;
+  color: #1D4789 !important;
+}
+
+.text-c3ntro-blue-secondary{
+  font-family: "Belfast Grotesk Semi Bold", sans-serif;
+  color: #1D4789 !important;
+}
+
+.text-white{
+  font-family: "Belfast Grotesk Semi Bold", sans-serif;
+  color: #FFFFFF !important;
+}
+
+.text-lg{
+  font-family: "Belfast Grotesk Semi Bold", sans-serif;
+  color: #FFFFFF !important;
+}
+
 .fc-icon {
   /* added for fc */
   display: inline-block;
