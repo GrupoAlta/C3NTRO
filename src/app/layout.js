@@ -1,4 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
+
+import "./globals.css"
+
 import "@/assets/css/material-kit-pro.css";
 import "@/assets/css/nucleo-icons.css";
 import "@/assets/css/nucleo-svg.css";
