@@ -29,7 +29,7 @@ export default function NavBar() {
           </button>
 
           {/* Menú */}
-          <div className="navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
+          <div className="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
             <ul className="navbar-nav navbar-nav-hover ms-auto">
               <li className="nav-item mx-2">
                 <a className="nav-link text-white fw-bold" href="#">Estudios</a>
