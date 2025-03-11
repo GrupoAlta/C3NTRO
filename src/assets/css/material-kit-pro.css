@@ -11418,8 +11418,72 @@ fieldset:disabled .btn {
   background-color: #fff !important;
 }
 
-.bg-green {
+.bg-c3ntro-green {
   background-color: #013332 !important;
+}
+
+.bg-c3ntro-blue {
+  background-color: #527ED3 !important;
+}
+
+.bg-c3ntro-blue-secondary {
+  background-color: #1D4789 !important;
+}
+.text-c3ntro-blue-secondary {
+  color: #1D4789 !important;
+}
+
+.bg-card-c3ntro-1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.5rem;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  max-block-size: fit-content;
+}
+
+.bg-card-c3ntro-2 {
+  background-color: rgba(29, 71, 137, 0.3);
+  border-radius: 0.5rem;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  max-block-size: fit-content;
+}
+
+.bg-card-c3ntro-3 {
+  background-color: rgba(204, 222, 192, 0.8);
+  border-radius: 0.5rem;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  max-block-size: fit-content;
+}
+
+.bg-card-c3ntro-2-button {
+  background-color: rgba(29, 71, 137);
+  border-radius: 0.5rem;
+  border: 1px solid #CCDEC0;
+  box-sizing: border-box;
+}
+
+.c3ntro-wrapper {
+  position: relative;
+}
+.c3ntro-wrapper-content {
+  position: absolute;
+  z-index: 100;
+}
+.c3ntro-wrapper-background {
+  position: absolute;
+  z-index: -100;
+  min-width: 100vw;
+}
+
+.c3ntro-ubications-img {
+  height: 33%;
+  border-radius: 20px;
+  object-fit: cover;
 }
 
 .bg-transparent {
