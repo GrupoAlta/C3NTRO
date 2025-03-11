@@ -17,44 +17,49 @@ export default function Ubicaciones() {
           <h2 className="text-2xl font-bold text-center py-6 px-2" style={{ color: '#CCDEC0'}}>UBICACIONES</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="bg-card-c3ntro-1 p-4 text-center">
+          {/* Ubicación CAES */}
+          <div className="bg-card-c3ntro-1 p-4 text-center h-fit flex flex-col">
             <div className="mb-2">
               <Image src={marker} alt="location-icon" className="mx-auto" />
               <h3 className="text-xl font-semibold text-c3ntro-blue-secondary mt-4">CAES</h3>
             </div>
             <p className="text-c3ntro-blue-secondary mb-4">Km 15.5 carretera a El Salvador, Plaza concepción local L29, Nivel 2</p>
-            <a href="tel:37644227" className="bg-card-c3ntro-2-button text-white p-2 rounded-lg flex items-center justify-center">
-              <Image src={whatsapp} alt="location-icon" className="mx-auto" />
-              <span>3764 4227</span>
-              <Image src={arrowRight} alt="location-icon" className="mx-auto" />
-            </a>
-            <Image src={c3ntro2}  alt="c3ntro-caes" className="mx-auto c3ntro-ubications-img"/>
+            <div className="bg-card-c3ntro-2-button text-white p-2 rounded-lg flex items-center justify-center gap-1.5">
+              <Image src={whatsapp} alt="whatsapp-icon" className="w-5 h-5"/>
+              <span className="text-lg font-medium">3764 4227</span>
+              <Image src={arrowRight} alt="call-icon" className="w-5 h-5"/>
+            </div>
+            <Image src={c3ntro2} alt="c3ntro-caes" className="mx-auto mt-4 w-full h-[300px] object-cover rounded-lg"/>
           </div>
-          <div className="bg-card-c3ntro-2 p-4 text-center">
+
+          {/* Ubicación NOGALES */}
+          <div className="bg-card-c3ntro-2 p-4 text-center h-fit flex flex-col">
             <div className="mb-2">
               <Image src={marker2} alt="location-icon" className="mx-auto" />
               <h3 className="text-xl font-semibold text-white mt-4">NOGALES</h3>
             </div>
             <p className="text-white mb-4">Blvd Rafael Landívar, Nogales de Cayalá, 216. Local 21</p>
-            <a href="tel:37644227" className="bg-card-c3ntro-2-button text-white p-2 rounded-lg flex items-center justify-center">
-              <Image src={whatsapp} alt="location-icon" className="mx-auto" />
-              <span>3570 8798</span>
-              <Image src={arrowRight} alt="location-icon" className="mx-auto" />
-            </a>
-            <Image src={c3ntro1} alt="c3ntro-nogales" className="mx-auto c3ntro-ubications-img"/>
+            <div className="bg-card-c3ntro-2-button text-white p-2 rounded-lg flex items-center justify-center gap-1.5">
+              <Image src={whatsapp} alt="whatsapp-icon" className="w-5 h-5"/>
+              <span className="text-lg font-medium">3570 8798</span>
+              <Image src={arrowRight} alt="call-icon" className="w-5 h-5"/>
+            </div>
+            <Image src={c3ntro1} alt="c3ntro-nogales" className="mx-auto mt-4 w-full h-[300px] object-cover rounded-lg"/>
           </div>
-          <div className="bg-card-c3ntro-3 p-4 text-center">
+
+          {/* Ubicación TIFFANY */}
+          <div className="bg-card-c3ntro-3 p-4 text-center h-fit flex flex-col">
             <div className="mb-2">
               <Image src={marker} alt="location-icon" className="mx-auto" />
               <h3 className="text-xl font-semibold text-c3ntro-blue-secondary mt-4">TIFFANY</h3>
             </div>
             <p className="text-c3ntro-blue-secondary mb-4">5 Avenida 3-51, zona 14, Galerías Tiffany, segundo nivel</p>
-            <a href="tel:37644227" className="bg-card-c3ntro-2-button text-white p-2 rounded-lg flex items-center justify-center">
-              <Image src={whatsapp} alt="location-icon" className="mx-auto" />
-              <span>3571 3792</span>
-              <Image src={arrowRight} alt="location-icon" className="mx-auto" />
-            </a>
-            <Image src={c3ntro3}  alt="c3ntro-tiffany" className="mx-auto c3ntro-ubications-img"/>
+            <div className="bg-card-c3ntro-2-button text-white p-2 rounded-lg flex items-center justify-center gap-1.5">
+              <Image src={whatsapp} alt="whatsapp-icon" className="w-5 h-5"/>
+              <span className="text-lg font-medium">3571 3792</span>
+              <Image src={arrowRight} alt="call-icon" className="w-5 h-5"/>
+            </div>
+            <Image src={c3ntro3} alt="c3ntro-tiffany" className="mx-auto mt-4 w-full h-[300px] object-cover rounded-lg"/>
           </div>
         </div>
       </div>
